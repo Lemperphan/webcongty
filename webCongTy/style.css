@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", Roboto, Arial, Helvetica, sans-serif;
+}
+body{
+    padding-right: 5px;
+}
+header .logo .logo_google{
+    width: 80px;
+    height: 90px;
+}
+.nav {
+    display: -webkit-flex; 
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .nav_content ul {
+    display: -webkit-flex; 
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    list-style-type: none;
+    /* height: 50px; */
+}
+nav .nav_content ul li, .nav_element {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #202124;
+    margin-top: 3%;
+}
+nav .nav_content ul li .nav_element:hover{
+    background-color:#f8f9fa;
+    border-radius: 5px;
+}
+.header_text{
+    text-align: center;
+}
+.header_text h1{
+    font-size: 30px;
+    letter-spacing: normal;
+    margin-top: 36px;
+}
+
+.video{
+    text-align: center;
+    margin-top: 50px;
+}
+h3{
+    text-align: center;
+    width: 1330px;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.under_header{
+    text-align: center;
+    margin-left: 460px;
+    /* width: 10px; */
+    text-decoration: none;
+    font-weight: 800px;
+    margin-top: 40px;
+}
+.head_main, .head_main_2, .head_main_3{
+    text-align: center;
+    margin-top: 200px;
+}
+#button1, #button2{
+    width: 300px;
+    height: 50px;
+    
+}
+#father_button{
+    display: flex;
+    justify-content: space-around;
+}
+#button2{
+    background-color:#fff ;
+    color: #1a73e8  ;
+    border: 1px solid #dadce0;
+}
+#button2:hover{
+    border: 1px solid #1a73e8;
+    background-color:  #dadce0 ;
+    opacity: 0.8;
+}
+
+.little_content{
+    display: flex;
+    margin-top: 70px;
+    margin-left: 50px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.content_footer{
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 5px;
+    /* margin-left: 1px; */
+}
+footer{
+
+    margin-top: 200px;
+}
+
+.footer{
+    background-color: #171718c0;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: black;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+/* .footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+} */
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li {
+    list-style: none;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff50;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb73;
+	display: block;
+	transition: all 0.3s ease;
+
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/* mobile nav */
+.nav-button{
+    font-size: 20px;
+    padding: 20px 0px;
+    display: none;
+    color: grey;
+}
+.nav__overlay{
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+.nav__mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    transform: translateX(-100%);
+
+    transition: transform linear 0.2s;
+}
+/* .nav_content_mobile{
+
+} */
+.ul_mobile{
+    margin-top: 24px;
+}
+.ul_mobile li{
+    list-style: none;
+}
+.nav_element_mobile{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 15px 20px;
+    font-size: 1rem;
+
+}.nav_element_mobile:hover{
+    background-color: #f8f9fa;
+    border-radius: 50px;
+}
+.logo_google_mobile{
+    width: 100px;
+    height: 100px;
+}.logo_mobile{
+    height: 70px;
+    margin-left: 10px;
+}
+.nav__input:checked ~ .nav__overlay {
+    display: block;
+}
+.nav__input:checked ~ .nav__mobile{
+    transform: translate(0);
+
+}
+.close{
+    font-size: 20px;
+    margin-left:250px;
+    padding: 30px;
+    height: 10px;
+}
+@media (max-width:1024px) {
+    .nav-button{
+        display: block;
+        margin-right: 0; /* Remove the right margin */
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-top: 3px; /* Add some bottom margin for spacing */
+    }
+    .nav__pc{
+        display: none;
+    }
+    .logo{
+        order: 1;
+        margin-left: 10px;
+    }.header_text h1{
+        font-size: 30px;
+    }iframe{
+        width: 800px;
+        height: 400px;
+    } h3{
+        width: 700px;
+        font-size: 30px;
+        margin-left:150px;
+    }.under_header{
+        font-size: 13px;
+        margin-left: 330px;
+    }#button1, #button2{
+        width: 400px;
+        height: 70px;
+    }.little_content a img{
+        max-width: 400px; 
+        height: auto;
+    } .little_content {
+        overflow: hidden; /* Prevents content from overflowing its container */
+    }
+
+    .little_content a {
+        display: block; /* Make the anchor tags block-level elements */
+    }
+
+}
+@media (max-width: 412px){
+    .header_text h1{
+        font-size: 20px;
+        width: 150px;
+        margin-left: none;
+    }iframe{
+        width: 370px;
+        height: 250px;
+    }h3{
+        width: 300px;
+        font-size: 16px;
+        margin-left:40px;
+    }.under_header{
+        margin-left: 10px;
+        font-size: 14px;
+    }.head_main{
+        font-size: 23px;
+    }#button1, #button2{
+        width: 300px;
+        height: 50px;
+    }.little_content {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .little_content a {
+        margin-bottom: 10px;
+    }
+
+    .little_content a img {
+        max-width: 320px; 
+        margin-left: 10px !important;
+        height: auto; 
+        display: block; 
+    }  .little_content a p {
+        font-size: 16px !important;
+        width: 300px !important;
+        margin-left: 20px; 
+    }.head_main_2 {
+        font-size: 22px;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
